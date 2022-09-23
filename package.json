@@ -1,0 +1,46 @@
+{
+  "name": "origin-nodejs-challenge",
+  "version": "1.0.0",
+  "description": "Origin challenge for backend candidates",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon -e ts --watch src --exec \"tsc && node dist/index.js\"",
+    "lint": "eslint './src/**/*.{ts,tsx}' './src/**/*.{ts,tsx}' --quiet",
+    "lint:fix": "yarn lint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OriginFinancial/origin-nodejs-challenge.git"
+  },
+  "keywords": [
+    "origin",
+    "nodejs",
+    "backend",
+    "challenge"
+  ],
+  "author": "Origin Engineers",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/axios-mock-adapter": "^1.10.0",
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.0.3",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "axios-mock-adapter": "^1.21.2",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4",
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.8.3"
+  }
+}
